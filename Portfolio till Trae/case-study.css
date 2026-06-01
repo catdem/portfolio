@@ -1,0 +1,513 @@
+/* Modern Typography Import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Case Study Specific Styles */
+.case-study-main {
+    background: #fafafa;
+    min-height: 100vh;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.case-study-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 80px 40px;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.case-study-hero {
+    margin-bottom: 120px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.breadcrumb {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.breadcrumb a {
+    color: #1a1a1a;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.breadcrumb a:hover {
+    color: #333;
+}
+
+/* Hero Content Layout */
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin: 30px 0;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
+    animation: fadeIn 0.6s ease-out;
+}
+
+/* Loading animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-image {
+    flex: 0 0 auto;
+    width: 300px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.hero-text {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: #1a1a1a;
+    margin: 0 0 16px 0;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #666666;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.case-study-title {
+    font-size: clamp(36px, 5vw, 64px);
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-bottom: 60px;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+}
+
+.case-study-meta {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.meta-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.meta-value {
+    font-size: 18px;
+    color: #1a1a1a;
+    font-weight: 500;
+}
+
+/* Section Styling */
+.case-study-section {
+    margin-bottom: 100px;
+}
+
+.section-title {
+    font-size: clamp(28px, 4vw, 48px);
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 40px;
+    letter-spacing: -0.01em;
+}
+
+.section-content {
+    font-size: 18px;
+    color: #333;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+.section-content p {
+    margin-bottom: 32px;
+}
+
+.section-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Storytelling Elements */
+.highlight-box {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    padding: 40px;
+    margin: 60px 0;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+.highlight-box::before {
+    content: '"';
+    position: absolute;
+    top: -10px;
+    left: 40px;
+    font-size: 80px;
+    color: #f0f0f0;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.highlight-box h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.highlight-box p {
+    margin: 0;
+    font-size: 24px;
+    color: #1a1a1a;
+    font-weight: 500;
+    line-height: 1.4;
+    font-style: italic;
+}
+
+/* Research Insights */
+.research-insights {
+    background: #fff;
+    padding: 50px;
+    border-radius: 16px;
+    margin-top: 60px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+.research-insights h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 32px;
+    letter-spacing: -0.01em;
+}
+
+.research-insights ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 20px;
+}
+
+.research-insights li {
+    position: relative;
+    padding-left: 40px;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.research-insights li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: #1a1a1a;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* Method Steps */
+.method-steps {
+    margin: 80px 0;
+    display: grid;
+    gap: 40px;
+}
+
+.step {
+    display: flex;
+    align-items: flex-start;
+    padding: 50px;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+.step:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+}
+
+.step-number {
+    background: #1a1a1a;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 24px;
+    margin-right: 40px;
+    flex-shrink: 0;
+}
+
+.step-content h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 12px;
+    letter-spacing: -0.01em;
+}
+
+.step-content p {
+    margin: 0;
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Results Grid */
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+    margin: 80px 0;
+}
+
+.result-card {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 16px;
+    padding: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    position: relative;
+    overflow: hidden;
+}
+
+.result-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #1a1a1a, #666);
+}
+
+.result-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 50px rgba(0, 0, 0, 0.12);
+}
+
+.result-card h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 24px;
+    letter-spacing: -0.01em;
+}
+
+.result-card p {
+    margin: 0;
+    color: #555;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* Recommendations */
+.recommendations {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin: 80px 0;
+}
+
+.recommendation {
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid #e5e5e5;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+.recommendation:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.recommendation h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 16px;
+    letter-spacing: -0.01em;
+}
+
+.recommendation p {
+    margin: 0;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Modern Call-to-Action Buttons */
+.case-study-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 120px;
+    padding-top: 60px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.nav-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 16px 32px;
+    background: #1a1a1a;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+.nav-button:hover {
+    background: #333;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(26, 26, 26, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .case-study-container {
+        padding: 20px;
+        margin: 20px;
+    }
+    
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+        padding: 30px 20px;
+        margin: 40px 0;
+    }
+    
+    .hero-image {
+        width: 250px;
+        margin: 0 auto;
+    }
+    
+    .hero-text {
+        padding-left: 0;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .case-study-title {
+        font-size: 2rem;
+        margin: 40px 0 30px 0;
+    }
+    
+    .case-study-meta {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .section-content {
+        font-size: 1rem;
+    }
+    
+    .highlight-box {
+        padding: 25px;
+        margin: 30px 0;
+    }
+    
+    .research-insights {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .method-steps {
+        grid-template-columns: 1fr;
+    }
+    
+    .results-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .recommendations {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .case-study-container {
+        padding: 20px 15px;
+    }
+    
+    .highlight-box::before {
+        font-size: 60px;
+        left: 30px;
+    }
+    
+    .highlight-box p {
+        font-size: 20px;
+    }
+    
+    .step-number {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+}
